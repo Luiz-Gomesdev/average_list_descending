@@ -1,0 +1,23 @@
+package br.com.luiz.exemple.application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+import br.com.luiz.exemple.entite.Product;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		List<Product> list = new ArrayList<>();
+		
+		
+		sc.close();
+	}
+
+}

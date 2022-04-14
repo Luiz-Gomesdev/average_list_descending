@@ -1,0 +1,43 @@
+package br.com.luiz.exemple.application;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+import br.com.luiz.exemple.entite.Product;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter full file path: ");
+		String path = sc.nextLine();
+		
+		try (BufferedReader br = new BufferedReader(new FileReader(path))){
+			
+			List<Product> list = new ArrayList<>();
+			
+			String line = br.readLine();
+			while (line != null) {
+				String[] fields = line.split(",");
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}
